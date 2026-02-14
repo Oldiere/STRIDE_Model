@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 110,
-              "y": 220
+              "x": 120.00000000000023,
+              "y": 219.9999999999992
             },
             "size": {
-              "width": 680,
-              "height": 460
+              "width": 630,
+              "height": 440
             },
             "visible": true,
             "shape": "trust-boundary-box",
@@ -179,8 +179,8 @@
                 "text": "App Web"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -277,12 +277,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "6d6f42a8-f5b5-4217-b1be-7b00bcb64910",
+                  "title": "Spoofing de usuario",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Un atacante podría hacerse pasar por un usuario legítimo usando credenciales robadas para iniciar sesión en la tienda.",
+                  "mitigation": "Autenticación segura, gestión de sesiones y posible segundo factor",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -299,8 +321,8 @@
                 "text": "Servidor"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -397,12 +419,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e597a04b-e788-481c-a4fb-f2afca17e42f",
+                  "title": "Denegación de servicio",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Un atacante podría enviar muchas solicitudes y hacer que el sistema deje de funcionar.",
+                  "mitigation": "Límite de solicitudes, firewall y monitoreo.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -419,8 +463,8 @@
                 "text": "Servicio de pedidos"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -517,12 +561,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "8c24eda2-960c-4345-8f86-64094bc37e79",
+                  "title": "Repudio de pedido",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Un usuario podría negar haber realizado un pedido en la tienda.",
+                  "mitigation": "Registro de pedidos en logs con fecha, hora y usuario.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -539,8 +605,8 @@
                 "text": "Servicio de Autenticación"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -637,19 +703,42 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "44f51cc8-1c91-4834-894e-95cccff7cb10",
+                  "title": "Elevación de privilegios",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Un usuario normal podría obtener permisos de administrador y modificar productos o pedidos.",
+                  "mitigation": "Control de roles y verificación de permisos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -670,15 +759,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "77a6d664-6441-41c9-884d-fc1f3644a027",
+                  "title": "Manipulación de pedidos",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Un atacante podría modificar el precio o la cantidad del producto antes de que llegue al servidor.",
+                  "mitigation": "Validar precios y cantidades en el servidor y usar HTTPS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "bb4b791c-5c1c-4b12-b97f-50d57918876a"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "credenciales/pedido"
@@ -691,7 +799,8 @@
             "target": {
               "cell": "f5fc39ca-07cb-4972-b403-21a281396bc5",
               "port": "234fc46d-c28c-461a-977d-a4a21aa3cfde"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -970,11 +1079,13 @@
                 "text": "Base de datos"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1071,13 +1182,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "c85184b8-9c15-4f56-9106-1548194cedae",
+                  "title": "Divulgación de datos",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Un atacante podría acceder a datos personales de otros usuarios, como direcciones o historial de compras.",
+                  "mitigation": "Information Disclosure\nMitigation: Control de acceso y cifrado de información sensible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           }
         ]
@@ -1085,6 +1216,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 7
+    "threatTop": 13
   }
 }
